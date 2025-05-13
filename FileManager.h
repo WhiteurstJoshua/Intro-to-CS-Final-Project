@@ -2,15 +2,17 @@
 #define FILEMANAGER_H
 
 #include <string>
-#include "FileManager.h"
+#include "Logger.h"
 
 class FileManager {
 public:
-    FileManager(FileManager &logger);
+    FileManager(Logger &logger);
     bool writeFile(const std::string &filename, const std::string &data, bool encrypt = false, const std::string &key = "");
     bool readFile(const std::string &filename, std::string &data, bool decrypt = false, const std::string &key = "");
 private:
-    FileManager &logger;
+    Logger &logger;
 };
 
 #endif
+
+

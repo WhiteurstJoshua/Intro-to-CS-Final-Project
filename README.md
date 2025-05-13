@@ -10,3 +10,18 @@ This project is a modified version of an earlier file sorter I developed during 
 - **Modular Design:** Separate modules for Logger, Encryption, and File Management.
 
 ## Project Structure
+
+
+## Module Descriptions
+
+### Header Files
+These files contain the declarations of functions, classes, constants, and macros. They provide the interface for the modules and allow other parts of the project to reference the functionalities without needing to know the underlying implementation details.
+
+### Source Files
+These files contain the actual definitions (implementations) of the functions and classes declared in the header files. Separating the implementation allows for better code organization and easier maintenance.
+
+## Installation & Build Instructions
+1. Open your terminal and navigate to the project directory.
+2. Compile the project using the following command:
+   ```bash
+   g++ src/main.cpp src/FileManager.cpp src/Encryption.cpp src/Logger.cpp -o final_project

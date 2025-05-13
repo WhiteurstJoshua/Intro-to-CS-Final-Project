@@ -2,7 +2,7 @@
 #include "Encryption.h"
 #include <fstream>
 
-FileManager::FileManager(FileManager &logger) : logger(logger) {}
+FileManager::FileManager(Logger &logger) : logger(logger) {}
 
 bool FileManager::writeFile(const std::string &filename, const std::string &data, bool encrypt, const std::string &key) {
     std::string outputData = data;
